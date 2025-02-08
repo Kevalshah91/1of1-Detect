@@ -1,14 +1,13 @@
-// App.js
 import React, { useEffect, useState } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from './firebaseConfig';
-
-
+import MapScreen from './screens/Map';
 import LoginScreen from './screens/LoginScreen';
 import SignupScreen from './screens/SignUpScreen';
-import HomeScreen from './screens/HomeScreen.js';
+import HomeScreen from './screens/HomeScreen';
+import GyroscopeComponent from './screens/Gyroscope';
 
 const Stack = createNativeStackNavigator();
 
@@ -28,16 +27,37 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{ headerShown: false }}>
-        {user ? (
-          <Stack.Screen name="Home" component={HomeScreen} />
-        ) : (
-          <>
-            <Stack.Screen name="Login" component={LoginScreen} />
-            <Stack.Screen name="Signup" component={SignupScreen} />
-          </>
-        )}
-      </Stack.Navigator>
+      {user ? (
+        // Authenticated stack
+        <Stack.Navigator>
+          <Stack.Screen 
+            name="Home" 
+            component={HomeScreen} 
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen 
+            name="Map" 
+            component={MapScreen}
+          />
+          <Stack.Screen 
+            name="Gyroscope" 
+            component={GyroscopeComponent}
+          />
+        </Stack.Navigator>
+      ) : (
+        // Non-authenticated stack
+        <Stack.Navigator>
+          <Stack.Screen 
+            name="Login" 
+            component={LoginScreen} 
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen 
+            name="Signup" 
+            component={SignupScreen}
+          />
+        </Stack.Navigator>
+      )}
     </NavigationContainer>
   );
 }
