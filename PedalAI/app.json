@@ -12,6 +12,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    
     "plugins": [
       [
         "expo-location",
@@ -32,7 +33,9 @@
           "savePhotosPermission": "Allow $(PRODUCT_NAME) to save photos.",
           "isAccessMediaLocationEnabled": true
         }
-      ]
+      ],
+     
+      "expo-asset"
     ],
     "android": {
       "adaptiveIcon": {
@@ -47,8 +50,19 @@
         "READ_EXTERNAL_STORAGE",
         "WRITE_EXTERNAL_STORAGE",
         "RECORD_AUDIO",
-        "CALL_PHONE"
+        "CALL_PHONE",
+        "INTERNET"
       ]
+    },
+    "ios": {
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true
+        }
+      }
+    },
+    "extra": {
+      "serverUrl": ""
     },
     "web": {
       "favicon": "./assets/favicon.png"

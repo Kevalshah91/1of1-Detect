@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "expo-location": "^18.0.5",
+    "expo-network": "~7.0.5",
     "expo-sensors": "^14.0.2",
     "react-native-maps": "^1.20.1"
   }
