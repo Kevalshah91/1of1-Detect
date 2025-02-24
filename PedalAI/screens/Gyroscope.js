@@ -6,9 +6,9 @@ import * as Location from 'expo-location';
 import Base64 from 'base-64';
 
 // Replace with your Twilio credentials
-const TWILIO_ACCOUNT_SID = 'AC46f0f043d3a35f1ddb9612e92299b86f';
-const TWILIO_AUTH_TOKEN = '70ab2d061d88aa14b3381dd44c3f6e52';
-const TWILIO_WHATSAPP_NUMBER = 'whatsapp:+14155238886';
+const TWILIO_ACCOUNT_SID = 'Your api';
+const TWILIO_AUTH_TOKEN = 'none';
+const TWILIO_WHATSAPP_NUMBER = 'number';
  // Your Twilio WhatsApp number
 const EMERGENCY_CONTACT = '91YOUR_PHONE_NUMBER';  // Add the contact number here without '+'
 
