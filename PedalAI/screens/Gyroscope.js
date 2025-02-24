@@ -10,7 +10,7 @@ const TWILIO_ACCOUNT_SID = 'AC46f0f043d3a35f1ddb9612e92299b86f';
 const TWILIO_AUTH_TOKEN = '70ab2d061d88aa14b3381dd44c3f6e52';
 const TWILIO_WHATSAPP_NUMBER = 'whatsapp:+14155238886';
  // Your Twilio WhatsApp number
-const EMERGENCY_CONTACT = '918591884604';  // Add the contact number here without '+'
+const EMERGENCY_CONTACT = '91YOUR_PHONE_NUMBER';  // Add the contact number here without '+'
 
 const SERVER_URL = 'http://10.10.60.99:5000';
 const FALL_THRESHOLD = 5.0;
