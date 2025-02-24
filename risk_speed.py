@@ -221,22 +221,12 @@ def process_frame(frame, model, lane_detector, acc_detector, risk_assessor, fram
     
     if left_line is not None and right_line is not None:
         overlay = frame.copy()
-        # print(left_line,right_line)
-        factor=3
-        if right_line[2]<left_line[2]:
-            cv2.fillPoly(overlay, [np.array([
-                [left_line[0], left_line[1]],
-                [right_line[2], int((right_line[3]+right_line[1])//factor)],
-                [left_line[2], int((left_line[3]+left_line[1])//factor)],
-                [right_line[0], right_line[1]]
-            ])], (0, 255, 0, 128))
-        else:
-            cv2.fillPoly(overlay, [np.array([
-                [left_line[0], left_line[1]],
-                [left_line[2], int((left_line[3]+left_line[1])//factor)],
-                [right_line[2], int((right_line[3]+right_line[1])//factor)],
-                [right_line[0], right_line[1]]
-            ])], (0, 255, 0, 128))
+        cv2.fillPoly(overlay, [np.array([
+            [left_line[0], left_line[1]],
+            [left_line[2], left_line[3]],
+            [right_line[2], right_line[3]],
+            [right_line[0], right_line[1]]
+        ])], (0, 255, 0, 128))
         cv2.addWeighted(overlay, 0.35, frame, 0.65, 0, frame)
     
     for result in results:
@@ -285,13 +275,10 @@ def process_frame(frame, model, lane_detector, acc_detector, risk_assessor, fram
 
 def main():
     # You can change this to 0 for webcam or provide a video path
-    VIDEO_SOURCE = "videos/stock-footage.mp4" 
-    # VIDEO_SOURCE = "videos/india.mp4"
-    # VIDEO_SOURCE = "videos/night.mp4"
-    # VIDEO_SOURCE = "videos/crash.mp4"
+    VIDEO_SOURCE = "test_videos\lane.mp4"  # Replace with your video path
     
     # Initialize YOLO model
-    model = YOLO('models/vehicle.pt')
+    model = YOLO('yolov8n.pt')
     if torch.cuda.is_available():
         model.to('cuda')
         print("Using CUDA")
