@@ -4,13 +4,9 @@
 
 [![Demo Video](https://img.shields.io/badge/🎬_Demo-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/quflymY0dnk)
 [![Presentation](https://img.shields.io/badge/📊_Presentation-Canva-00C4CC?style=for-the-badge&logo=canva&logoColor=white)](https://www.canva.com/design/DAGelSosYOg/8kty6A9XlOxdtKr_I_EMKg/edit?utm_content=DAGelSosYOg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
-[![License](https://img.shields.io/badge/License-MIT-00D4AA?style=for-the-badge)](LICENSE)
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![AI](https://img.shields.io/badge/AI_Powered-00D9FF?style=for-the-badge&logo=artificial-intelligence&logoColor=white)](https://github.com)
 
-**Next-generation cyclist safety through intelligent computer vision and predictive analytics**
 
-[🚀 Quick Start](#-quick-start) • [📖 Documentation](#-features) • [🎯 Demo](#-demo) • [📊 Presentation](#-presentation) 
 
 </div>
 
@@ -257,12 +253,6 @@ Continuous health and alertness tracking:
 ---
 
 
-
-
-
-
----
-
 ## 🎯 Use Cases
 
 ### 🏙️ Urban Commuting
@@ -288,11 +278,6 @@ Continuous health and alertness tracking:
 ---
 
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
 
 ## 🙏 Acknowledgments
 
@@ -305,10 +290,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <div align="center">
 
 **Made with ❤️ for cyclist safety**
-
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/pedalai?style=social)](https://github.com/yourusername/pedalai/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/yourusername/pedalai?style=social)](https://github.com/yourusername/pedalai/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/yourusername/pedalai)](https://github.com/yourusername/pedalai/issues)
 
 [⬆ Back to Top](#-pedalai--ai-powered-cyclist-safety-system)
 
