@@ -4,7 +4,7 @@
 
 [![Demo Video](https://img.shields.io/badge/🎬_Demo-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/quflymY0dnk)
 [![Presentation](https://img.shields.io/badge/📊_Presentation-Canva-00C4CC?style=for-the-badge&logo=canva&logoColor=white)](https://www.canva.com/design/DAGelSosYOg/8kty6A9XlOxdtKr_I_EMKg/edit?utm_content=DAGelSosYOg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
-[![AI](https://img.shields.io/badge/AI_Powered-00D9FF?style=for-the-badge&logo=artificial-intelligence&logoColor=white)](https://github.com)
+
 
 
 
@@ -290,7 +290,5 @@ Continuous health and alertness tracking:
 <div align="center">
 
 **Made with ❤️ for cyclist safety**
-
-[⬆ Back to Top](#-pedalai--ai-powered-cyclist-safety-system)
 
 </div>
