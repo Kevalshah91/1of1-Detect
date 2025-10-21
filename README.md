@@ -28,7 +28,7 @@
 
 ```mermaid
 mindmap
-  root((PedalAI Safety))
+  root((RoadSight AI))
     Vision Intelligence
       YOLO Object Detection
       Risk Polygon Analysis
